@@ -11,7 +11,7 @@ class AddTodo extends React.Component {
     onInputChange = (e) => {
         const thisItem = this.state.item;
         thisItem.title = e.target.value;
-        this.setState({item: thisItem});
+        this.setState({ item: thisItem });
         console.log(thisItem);
     }
 
@@ -28,9 +28,9 @@ class AddTodo extends React.Component {
 
     }
 
-    render() {
-        return(
-            <Paper>
+    render(){
+        return (
+            <Paper style={{ margin: 16, padding: 16 }}>
                 <Grid container>
                     <Grid xs={11} md={11} item style={{ paddingRight: 16}}>
                         <TextField 
